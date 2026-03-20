@@ -610,8 +610,8 @@ const Jokesonicemasstck = () => {
               .map((part, index) => `subId${index + 1}=${part}`)
               .join('&') + `&checkData=${checkApsData}`;
         } else {
-          console.log('Якщо sab1 не містить "_", встановлюємо subId1=sab1');
-          //// Якщо sab1 не містить "_", встановлюємо subId1=sab1
+          //console.log('Якщо sab1 не містить "_", встановлюємо subId1=sab1');
+          // Якщо sab1 не містить "_", встановлюємо subId1=sab1
           additionalParams = `checkData=${checkApsData}`;
         }
       } else {
