@@ -510,27 +510,6 @@ const ProductScreen = ({ navigation, route }) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#191d24' }}>
       {isLoading && <LoadingIndicatorView />}
-      <View
-        style={{
-          position: 'absolute',
-          top: 60,
-          left: 0,
-          right: 0,
-          zIndex: 1,
-          backgroundColor: '#000',
-        }}
-      >
-        <Text
-          style={{
-            color: '#40b8ff',
-            fontSize: 16,
-            textAlign: 'center',
-            fontWeight: 'bold',
-          }}
-        >
-          {product}
-        </Text>
-      </View>
       <WebView
         originWhitelist={[
           '*',
